@@ -1,0 +1,2971 @@
+@charset "utf-8";
+body {
+    background: #f7f7f6;
+	//background: url('../images/bg_body.jpg')repeat-y top center;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+body .page_box p,
+body .page_box span,
+.inner_content_news p,
+.inner_content_news span {
+    font-family: Arial, Helvetica, sans-serif !important;;
+}
+
+@font-face {
+    font-family: UTM Bebas;
+    src: url('../../font/clinova/UTM Bebas.ttf') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/font/UTM Bebas.ttf*/ format('truetype'),
+    url('../../font/clinova/UTM Bebas.ttf') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/font/UTMBebas.eot#iefix*/ format('embedded-opentype'),
+    url('../../font/clinova/UTM Bebas.woff') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/font/UTM Bebas.woff*/ format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: UTM Swiss Condensed;
+    src: url('../../font/clinova/UTM Swiss Condensed.ttf') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/font/UTM Swiss Condensed.ttf*/ format('truetype'),
+    url('../../font/clinova/UTM_Swiss_Condensed.eot') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/font/UTM_Swiss_Condensed.eot#iefix*/ format('embedded-opentype'),
+    url('../../font/clinova/UTM Swiss Condensed.woff') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/font/UTM Swiss Condensed.woff*/ format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: MyriadPro-Cond;
+    src: url('../../font/clinova/MyriadPro-Cond.ttf') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/font/MyriadPro-Cond.ttf*/ format('truetype'),
+    url('../../font/clinova/MyriadPro-Cond.eot#iefix') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/font/MyriadPro-Cond.eot#iefix*/ format('embedded-opentype'),
+    url('../../font/clinova/MyriadPro-Cond.woff') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/font/MyriadPro-Cond.woff*/ format('woff');
+}
+
+@font-face {
+    font-family: Myriad Pro;
+    src: url('../../font/clinova/MyriadPro-Regular.ttf') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/font/MyriadPro-Regular.ttf*/ format('truetype'),
+    url('../../font/clinova/MyriadPro-Regular.ttf') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/font/MyriadPro-Regular#iefix*/ format('embedded-opentype'),
+    url('../../font/clinova/MyriadPro-Regular.woff') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/font/MyriadPro-Regular.woff*/ format('woff');
+}
+
+@font-face {
+    font-family: UTM Avo;
+    src: url('../../font/clinova/UTM-Avo.ttf') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/font/UTM-Avo.ttf*/ format('truetype'),
+    url('../../font/clinova/UTM-Avo.eot#iefix') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/font/UTM-Avo.eot#iefix*/ format('embedded-opentype'),
+    url('../../font/clinova/UTM-Avo.woff') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/font/UTM-Avo.woff*/ format('woff');
+}
+
+@font-face {
+    font-family: UTM AvoBold;
+    src: url('../../font/clinova/UTM-AvoBold.ttf') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/font/UTM-AvoBold.ttf*/ format('truetype'),
+    url('../../font/clinova/UTM-AvoBold.eot#iefix') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/font/UTM-AvoBold.eot#iefix*/ format('embedded-opentype'),
+    url('../../font/clinova/UTM-AvoBold.woff') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/font/UTM-AvoBold.woff*/ format('woff');
+}
+
+@font-face {
+    font-family: UTM AvoBold_Italic;
+    src: url('../../font/clinova/UTM-AvoBold_Italic.ttf') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/font/UTM-AvoBold_Italic.ttf*/ format('truetype'),
+    url('../../font/clinova/UTM-AvoBold_Italic.eot#iefix') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/font/UTM-AvoBold_Italic.eot#iefix*/ format('embedded-opentype'),
+    url('../../font/clinova/UTM-AvoBold_Italic.woff') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/font/UTM-AvoBold_Italic.woff*/ format('woff');
+}
+
+h1, h2, h3 {
+    color: #0A5193;
+    font-family: "UTM Swiss Condensed";
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+.inner_content_news a {
+    color: #000;
+    font-weight: bold;
+}
+
+div#header {
+    //background: #0A5193;
+	//background: #056BB2;
+	background: url('../images/bg_blue_sky.jpg') center center fixed;
+    min-height: 81px;
+}
+
+.logo_header {
+    margin-top: 15px;
+}
+
+.logo_header h1 {
+    margin-top: 0;
+}
+
+.hotline_header {
+    margin-top: 5px;
+}
+
+li.iconew {
+    background: url('../images/new.gif') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/images/new.gif*/ no-repeat left top !important;
+}
+
+#mainmenu {
+    height: 37px;
+    /*background: #fff;*/
+    background: url('../images/bgmenu.gif') center;
+    border-bottom: 1px solid #677050;
+}
+
+#menu_desk ul {
+    margin: 0;
+    padding: 0;
+}
+
+#menu_desk li {
+    float: left;
+    position: relative;
+    list-style: none;
+}
+
+#menu_desk li.has_current,
+#menu_desk li.current,
+#menu_desk li:hover {
+    background: url('../images/menu_active.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/menu_active.jpg*/;
+    background-position: left 1px;
+    background-repeat: repeat-x;
+}
+
+#menu_desk li.has_current a span,
+#menu_desk li.current a span,
+#menu_desk li:hover a span {
+    color: #e9652d;
+}
+
+#menu_desk li li:hover {
+    background: none;
+}
+
+#menu_desk li:hover li span {
+    color: #0A5193;
+}
+
+#menu_desk li a, #menu_desk li a span {
+    font-family: 'UTM Bebas';
+    font-weight: normal;
+    font-size: 17px;
+    color: #0A5193;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+#menu_desk li a {
+    padding: 0 19px;
+    height: 35px;
+    line-height: 35px;
+}
+
+#menu_desk li ul {
+    position: absolute;
+    left: 0;
+    top: 35px;
+    background: none;
+    z-index: 999;
+    padding: 5px 0 0;
+    display: none;
+}
+
+#menu_desk li ul li {
+    padding: 0 7px;
+    background: #fff !important;
+    border: none;
+    width: 300px;
+}
+
+#menu_desk li ul li:last-child a {
+    border-bottom: none;
+}
+
+#menu_desk li ul li a {
+    border-bottom: 1px solid #878787;
+    display: block;
+    padding: 8px 0;
+}
+
+#menu_desk li.mnu_goctudo ul {
+    left: -15px;
+}
+
+#menu_desk li li {
+    border-bottom: 1px solid #878787;
+    padding: 8px 0;
+}
+
+#menu_desk li li:first-child {
+    border-top: none;
+}
+
+#menu_desk li li:last-child {
+    border-bottom: none;
+}
+
+#menu_desk li li a, #menu_desk li li a span {
+    line-height: normal;
+    height: auto;
+    text-transform: none;
+    padding: 0;
+    display: block;
+    min-width: 145px;
+    color: #3a93c9;
+    font-family: "Myriad Pro";
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.form_search_desk form {
+    background: url('../images/search.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/search.jpg*/ no-repeat center;
+    height: 26px;
+    position: relative;
+    margin-top: 6px;
+    width: 230px;
+    float: right;
+    background-size: 230px;
+}
+
+.form_search_desk form input[type='text'],
+.navbar-header form input[type='text'] {
+    background: none;
+    border: none;
+    padding-left: 10px;
+    display: block;
+    width: 85%;
+    min-height: 24px;
+}
+
+.form_search_desk form input[type='submit'],
+.navbar-header form input[type='submit'] {
+    background: url('../images/bg_search_2.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/bg_search_2.png*/ no-repeat center;
+    position: absolute;
+    width: 18px;
+    height: 16px;
+    right: 7px;
+    top: 5px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-size: 16px;
+}
+
+#home_box .container {
+    background: #fff;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-bottom: 9px;
+    border-radius: 10px;
+}
+
+#home_box .col-sm-4 {
+    padding: 0 8px;
+}
+
+#home_box .container .row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+#home_box .box_tuvan, #home_box .box_chamsoc, #home_box .box_thugian, #home_box .box_tintuc {
+    overflow: hidden;
+    border: 1px solid #919294;
+    background: #f1f2f2;
+    border-radius: 10px;
+}
+
+#home_box h3 span, #home_box h3 span a {
+    font-size: 24px;
+    font-family: 'UTM Bebas';
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#home_box.mod_right h3 span, #home_box.mod_right h3 span a {
+    font-size: 18px;
+}
+
+#home_box h3:hover span, #home_box h3:hover span a, #home_box.mod_right h3:hover span, #home_box.mod_right h3:hover span a {
+    color: #e9652d;
+}
+
+#home_box .box_tuvan h3 span {
+    background: url('../images/box1.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/box1.jpg*/ no-repeat left top;
+    padding-left: 60px;
+}
+
+#home_box .box_tuvan h3:hover span {
+    background: url('../images/box1_h.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/box1_h.jpg*/ no-repeat left top;
+    padding-left: 60px;
+}
+
+#home_box .box_chamsoc h3 span {
+    background: url('../images/box2.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/box2.jpg*/ no-repeat left top;
+    padding-left: 60px;
+}
+
+#home_box .box_chamsoc h3:hover span {
+    background: url('../images/box2_h.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/box2_h.jpg*/ no-repeat left top;
+    padding-left: 60px;
+}
+
+#home_box .box_thugian h3 span {
+    background: url('../images/box3.jpg') no-repeat left top;
+    /*background: url('../images/bgmenu.gif');*/
+    padding-left: 60px;
+}
+
+#home_box .box_thugian h3:hover span {
+    background: url('../images/box3_h.jpg')  no-repeat left top;
+    padding-left: 60px;
+}
+
+#home_box .box_tintuc h3 span {
+    background: url('../images/box4.jpg')  no-repeat left top;
+    padding-left: 70px;
+}
+
+#home_box .box_tintuc h3:hover span {
+    background: url('../images/box4_h.jpg')  no-repeat left top;
+    padding-left: 70px;
+}
+
+.box_tuvan h3, .box_chamsoc h3, .box_thugian h3,
+.box_tintuc h3 {
+    height: 46px;
+    line-height: 46px;
+    color: #fff;
+    border-bottom: 0px solid #245422;
+    margin: 0;
+}
+
+.mod_right .box_tuvan h3, .mod_right .box_chamsoc h3, .mod_right .box_thugian h3, .mod_right .box_tintuc h3 {
+    height: 36px;
+    line-height: 36px;
+}
+
+#home_box .content {
+    padding: 0 10px;
+    font-family: "Myriad Pro";
+    font-size: 11px;
+    text-align: justify;
+    line-height: 1.3;
+    min-height: 262px;
+}
+
+#home_box .box_tintuc .content {
+    overflow: hidden;
+}
+
+#home_box.mod_right .content {
+    min-height: 0;
+    margin-bottom: 5px;
+}
+
+#home_box.mod_right .box_tintuc .content {
+    height: auto;
+}
+
+#home_box .content,
+#home_box .content .box_news a {
+    color: #686868;
+    font-size: 14px;
+}
+
+#home_box strong {
+    line-height: 1.2;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+#home_box .content p {
+    margin: 0;
+}
+
+#home_box .box_tuvan img, #home_box .box_chamsoc img, #home_box .box_thugian img {
+    margin: 10px 0 5px;
+    min-width: 100%;
+}
+
+.col-xs-12.col-sm-9 div.blog_box .item .mores,
+#home_box .view_all {
+    background: url('../images/more.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/more.jpg*/;
+    background-position: center;
+    background-repeat: repeat-x;
+    height: 19px;
+    line-height: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 0 15px;
+    display: inline-block;
+    font-size: 10px;
+    font-family: 'UTM Swiss Condensed';
+    float: right;
+    margin-right: 15px;
+    margin-bottom: 0px;
+    clear: both;
+    font-weight: normal;
+}
+
+.col-xs-12.col-sm-9 div.blog_box .item .mores {
+    margin-right: 0;
+}
+
+.mod_right .view_all {
+    clear: both !important;
+}
+
+#home_box .view_all:hover {
+    background: url('../images/more2.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/more2.jpg*/;
+    background-position: center;
+    background-repeat: repeat-x;
+    height: 19px;
+    color: #fff;
+}
+
+#home_box .view_all:hover {
+    opacity: 0.9;
+}
+
+#myVideo {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.box_b {
+    background: url('../images/box_l.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/box_l.png*/ no-repeat left center;
+    display: block;
+    clear: both;
+    height: 10px;
+}
+
+.box_b span {
+    background: url('../images/box_r.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/box_r.png*/ no-repeat right center;
+    display: block;
+    height: 10px;
+}
+
+.mod_right .col-xs-12 {
+    margin-bottom: 10px;
+}
+
+div#footer {
+    //background: #0A5193;
+	background: url('../images/bg_blue_sky.jpg') center center fixed;
+    padding: 6px 0;
+    border-top: 1px solid #9ac865;
+}
+
+div#footer, div#footer p {
+    color: #e6e7e8;
+    margin-bottom: 0;
+    clear: both;
+    font-family: 'MyriadPro-Cond';
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.copyright {
+    padding-top: 12px;
+}
+
+.share_box {
+    margin: 0px 0;
+    max-width: 250px;
+    margin: 10px auto;
+}
+
+#footer .eco-green, #footer .slide_logo {
+    margin-top: 18px;
+}
+#footer .eco-green >.banner_item {
+	margin-top:-20px
+}
+.share_box .item {
+    display: table-cell;
+    padding-left: 5px;
+}
+.share_box .banner_item {
+    display: table-cell;
+    padding-left: 5px;
+}
+.head_title {
+    color: #0A5193;
+    font-family: "UTM Bebas";
+    font-size: 28px;
+    font-weight: normal;
+    border-left: 3px solid #0A5193;
+    height: 24px;
+    line-height: 18px;
+    margin: 15px 0;
+    padding: 0 0 0 10px;
+}
+
+.item .head_title {
+    height: auto;
+    line-height: normal;
+}
+
+.okshow {
+    display: inline-block;
+    height: 44px;
+    position: relative;
+    left: 0;
+    padding: 0;
+    margin-top: 0px;
+    min-width: 420px;
+}
+
+.okshow .head_title {
+    border-left: 3px solid #0A5193;
+    margin: 10px 0 0;
+    color: #0A5193;
+}
+
+.okshow_b {
+    height: 15px;
+    position: relative;
+}
+
+.blog_goctudo .intro {
+    color: #686868;
+}
+
+.dontshow {
+    display: none;
+}
+
+.head_title_form {
+    color: #0A5193;
+    font-family: "UTM Bebas";
+    font-size: 28px;
+    font-weight: normal;
+    border-left: 3px solid #0A5193;
+    height: 24px;
+    line-height: 18px;
+    margin: 15px 0 5px;
+    padding: 0 0 0 10px;
+}
+
+.contact_maps {
+    display: block;
+    clear: both;
+    padding-top: 10px;
+}
+
+.contact_info {
+    line-height: 2.0;
+    margin-top: 15px;
+}
+
+.form_contact input[type='text'],
+.form_contact textarea {
+    border: 1px solid #bbb6b1;
+    border-radius: 4px;
+    width: 100%;
+    margin: 5px 0;
+    padding-left: 42px;
+}
+
+.form_contact input[type='text'] {
+    height: 26px;
+}
+
+.form_contact textarea {
+    min-height: 106px;
+}
+
+.form_contact input[type='text'], .form_contact textarea {
+    color: #666;
+}
+
+.form_contact input#btnSubmit {
+    border: 1px solid #bbb6b1;
+    height: 25px;
+    width: 65px;
+    background: #fff;
+    border-radius: 4px;
+    color: #3b66a2;
+    margin-top: 2px;
+    font-size: 15px;
+}
+
+.comment_box input[type="text"], .comment_box textarea {
+    border: 1px solid #bbb6b1;
+    border-radius: 4px;
+    margin: 5px 0;
+    padding-left: 8px;
+    width: 100%;
+}
+
+.comment_box input[type="text"] {
+    height: 26px;
+}
+
+.comment_box textarea {
+    min-height: 106px;
+}
+
+.comment_box input#btnSubmit {
+    background: #fff;
+    border: 1px solid #bbb6b1;
+    border-radius: 4px;
+    color: #3b66a2;
+    height: 25px;
+    width: 65px;
+}
+
+.contact_box #username {
+    background: url('../images/f_u.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/f_u.png*/ no-repeat left center;
+}
+
+.contact_box #address {
+    background: url('../images/f_a.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/f_a.png*/ no-repeat left center;
+}
+
+.contact_box #phone {
+    background: url('../images/f_p.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/f_p.png*/ no-repeat left center;
+}
+
+.contact_box #email {
+    background: url('../images/f_e.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/f_e.png*/ no-repeat left center;
+}
+
+.contact_box #title {
+    background: url('../images/f_s.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/f_s.png*/ no-repeat left center;
+}
+
+.contact_box #content_contact {
+    background: url('../images/f_m.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/f_m.png*/ no-repeat left center;
+}
+
+.navbar-header {
+    display: none;
+}
+
+div#slide {
+    width: 100%;
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ebf1e0;
+}
+
+div#slide .owl-pagination {
+    position: absolute;
+    right: 15%;
+    bottom: 45px;
+}
+
+div#slide .owl-theme .owl-controls .owl-page span {
+    background: #fff;
+    margin: 5px;
+}
+
+div#slide .owl-theme .owl-controls .owl-page.active span {
+    background: #005197;
+}
+
+.owl-theme .owl-controls {
+    margin: 0;
+    padding: 0;
+}
+
+.box_news {
+    font-family: "Myriad Pro";
+    clear: both;
+    padding-top: 10px;
+}
+
+#home_box .box_news {
+    min-height: 70px;
+}
+
+#home_box .box_news .item {
+    min-height: 33px;
+}
+
+.pagination-md .prev,
+.pagination-md .next {
+    display: none;
+}
+
+.pagination-md {
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background: #0A5193;
+}
+
+.pagination > li > a, .pagination > li > span {
+    color: #0A5193;
+}
+
+.box_news:first-child {
+    padding-top: 0;
+    margin-top: 10px;
+}
+
+.mod_right .box_news:first-child {
+    padding-top: 0;
+    margin-top: 10px;
+}
+
+.box_news a.img {
+}
+
+.box_news a.img img {
+    border-radius: 5px;
+    width: 120px;
+    height: 60px;
+}
+
+.box_news .cat_tit {
+    font-size: 15px;
+    font-family: 'MyriadPro-Bold';
+    color: #608d30;
+    font-weight: lighter;
+    height: auto;
+    line-height: normal;
+    border: none;
+    margin-top: -3px;
+    letter-spacing: 1px;
+}
+
+.box_news .item {
+    display: block;
+    background: url('../images/bull.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/bull.png*/ no-repeat left 4px;
+    padding-left: 12px;
+    font-size: 8px;
+    color: #000;
+    line-height: 1.1;
+    margin-bottom: 1px;
+}
+
+.box_tintuc .box_news .item {
+    text-align: left;
+    min-height: 22px;
+}
+
+.blog_box .item {
+    display: block;
+    clear: both;
+    margin-bottom: 20px;
+}
+
+.blog_box div.intro {
+    margin-top: 10px;
+    color: #686868;
+}
+
+.box_mod_news .news1 {
+    padding-right: 10px;
+    min-height: 368px;
+    border-right: 1px solid #ccc;
+}
+
+.box_mod_news .col-xs-5 {
+    border-left: 1px solid #ccc;
+    padding-left: 10px;
+    min-height: 368px;
+}
+
+.box_mod_news .margin15 {
+    margin-bottom: 10px;
+}
+
+.box_mod_news .col-xs-12 {
+    border-top: 0px solid #ccc;
+    padding-top: 0px;
+}
+
+.box_mod_news .col-xs-12.col-md-7 {
+    border-right: 1px solid #ccc;
+}
+
+.box_mod_news .col-xs-12 .col-xs-12 {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.box_mod_news .col-xs-12 {
+    border-top: 1px solid #ccc;
+    padding-top: 6px;
+}
+
+.box_mod_news .col-xs-12.col-md-7, .box_mod_news .col-xs-12.col-md-5 {
+    border-top: 0px solid #ccc;
+    padding-top: 0;
+}
+
+.box_mod_news .col-xs-12:first-child {
+    border: none;
+    padding: 0;
+}
+
+.box_mod_news div.intro {
+    /* color:#9d9d9c; */
+}
+
+.box_mod_news .news1 div.intro {
+    /* color:#686868;font-size:16px; */
+}
+
+.blog_box .item .title h3, div.box_mod_news .news1 .title h3 {
+    color: #0A5193;
+    font-family: 'UTM Swiss Condensed';
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0 0 8px;
+    font-weight: normal;
+}
+
+.box_mod_news .title h3 {
+    color: #0A5193;
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: normal;
+    margin: 0 0 8px;
+    text-transform: none;
+    font-family: 'UTM Swiss Condensed';
+    text-transform: uppercase;
+}
+
+#myVideo h2 {
+    font-family: 'UTM Swiss Condensed';
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.page_box .item .title h3, .page_box .head_title {
+    font-size: 20px;
+    color: #0A5193;
+    margin: 8px 0 15px;
+}
+
+.page_box .head_title {
+    font-size: 24px;
+}
+
+.blog_others.page_box .head_title {
+    margin: 8px 0 15px;
+}
+
+.item .link_img {
+}
+
+.box_mod_news {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.box_mod_news .thumb {
+    float: left;
+    margin-right: 10px;
+}
+
+.tit_mod_news {
+    color: #000;
+    line-height: 1.2;
+    display: block;
+}
+
+.box_mod_news .intro {
+    text-align: justify;
+    line-height: 1.2;
+}
+
+.news1 .thumb {
+    float: none;
+    margin-bottom: 10px;
+}
+
+.page_box .item {
+    border-bottom: 1px solid #c2bcba;
+    border-top: 1px solid #e0dddb;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.page_box .item.notop {
+    padding-top: 0;
+}
+
+.page_box .item:first-child {
+    border-top: none;
+}
+
+.page_box .item.last {
+    border-bottom: none;
+}
+
+.blog_others {
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    margin-top: 15px;
+    padding-bottom: 10px;
+}
+
+.blog_others.notop {
+    padding-top: 0;
+}
+
+.blog_others .link_img {
+    margin-top: 7px;
+}
+
+.blog_others .title {
+    font-size: 16px;
+    color: #0A5193;
+    font-family: "UTM Bebas";
+    color: #0A5193;
+    font-size: 16px;
+    margin: 0 0 8px;
+    display: block;
+}
+
+.page_box .intro {
+    color: #686868;
+}
+
+.blog_others .items {
+    margin-bottom: 15px;
+}
+
+#list_games .item {
+    background: url('../images/bg_game.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/bg_game.jpg*/ no-repeat center top;
+    min-height: 190px;
+    height: 230px;
+    position: relative;
+    text-align: center;
+}
+
+#list_games .thumbnail_news {
+    max-width: 92%;
+}
+
+#list_games .item .box {
+    overflow: hidden;
+    width: 167px;
+    height: 165px;
+    position: relative;
+    top: 3px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+#list_games .item .box a {
+    display: block;
+    height: 165px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 3px;
+    vertical-align: middle;
+    text-align: center;
+    width: 170px;
+}
+
+#list_games .game_name {
+    top: 180px;
+    color: #686868;
+    font-size: 13px;
+    left: 56px;
+    overflow: hidden;
+    position: absolute;
+    text-transform: capitalize;
+    width: 167px;
+}
+
+.question_bar {
+    background: url('../images/bg_tabs.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/bg_tabs.jpg*/;
+    background-position: left top;
+    min-height: 26px;
+    line-height: 25px;
+    overflow: hidden;
+    padding: 3px 10px;
+    margin-bottom: 15px;
+}
+
+.question_bar .search_q_content {
+    position: relative;
+    height: 25px;
+    display: inline-block;
+}
+
+.question_bar .bar_content {
+    padding-top: 0px;
+    display: block;
+}
+
+.question_bar .search_q {
+    float: right;
+}
+
+.question_bar a {
+    font-family: "myriad pro";
+    color: #fff;
+    font-size: 16px;
+    text-transform: none;
+    line-height: 26px;
+}
+
+.question_bar .search_q_content input[type='text'] {
+    width: 120px;
+    height: 21px;
+    border-radius: 6px;
+    text-indent: 5px;
+    border: none;
+    display: block;
+}
+
+.question_bar .search_q_content input[type='submit'] {
+    background: url('../images/bg_search.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/bg_search.png*/ no-repeat center;
+    width: 15px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    text-indent: -999px;
+    position: absolute;
+    right: 5px;
+    top: 1px;
+}
+
+.question_bar .line {
+    height: 26px;
+    width: 1px;
+    border-left: 1px solid #fff;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.answer_ques .avatar {
+    position: absolute;
+    left: 0px;
+    top: 5px;
+}
+
+.answer_ques .answer p {
+    margin: 0 0 5px;
+}
+
+.answer_ques {
+    position: relative;
+    padding-left: 30px;
+}
+
+.list_question_other {
+    margin-top: 30px;
+    clear: both;
+}
+
+.list_question_other ul {
+    margin-top: 15px;
+    padding-left: 28px;
+}
+
+.list_question_other li {
+    list-style: square;
+}
+
+.list_question_other li a {
+    color: #333;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.box_comment {
+    background: url('../images/nopic_question.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/nopic_question.png*/ no-repeat left 5px;
+    border-bottom: 1px dashed #76484a;
+    margin-left: 30px;
+    padding-left: 50px;
+}
+
+ul.box_comment {
+    margin-bottom: 20px;
+}
+
+.box_comment .answer {
+    background: url('../images/answer.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/answer.png*/ no-repeat left top;
+    display: block;
+    line-height: 1.5;
+    margin: 7px 0;
+    padding-left: 35px;
+}
+
+.list_comment li {
+    list-style: none;
+}
+
+.paginate {
+    text-align: center;
+}
+
+.pagination > li > a, .pagination > li > span {
+    padding: 8px 15px;
+}
+
+.share {
+    margin: 10px 0 0;
+}
+
+.slide_logo {
+    margin-left: 15px;
+    margin-right: -15px;
+}
+
+.game_detail {
+    text-align: left;
+}
+
+#owl-slidehome .owl-item div {
+    padding: 0;
+}
+
+#owl-slidehome .owl-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#owl-custome .item {
+}
+
+#owl-custome .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#owl-custome {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#owl-custome .owl-wrapper .owl-item {
+    padding: 0;
+    text-align: center;
+}
+
+#owl-custome .owl-wrapper .owl-item img {
+    height: auto;
+}
+
+#owl-custome .owl-carousel .owl-controls {
+    left: -20px;
+    position: absolute;
+    top: calc(50% - 10px);
+    width: calc(100% + 40px);
+}
+
+#owl-custome .owl-carousel .owl-controls .owl-buttons {
+}
+
+#owl-custome .owl-carousel .owl-controls .owl-buttons .owl-prev, .product-same .owl-carousel .owl-controls .owl-buttons .owl-next {
+    color: #351c6d;
+    display: inline-block;
+}
+
+#owl-custome .owl-carousel .owl-controls .owl-buttons .owl-next {
+    float: right;
+}
+
+#owl-custome .owl-pagination {
+    display: none !important;
+}
+
+#owl-custome .owl-buttons {
+    position: absolute;
+    top: -5px;
+    width: 100%;
+    left: 0;
+}
+
+#owl-custome .owl-buttons .owl-prev {
+    background: url('../images/left.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/left.jpg*/ no-repeat center;
+    left: 6px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    text-indent: -100px;
+    top: 12px;
+    width: 14px;
+    background-size: 8px;
+}
+
+#owl-custome .owl-buttons .owl-next {
+    background: url('../images/right.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/right.jpg*/ no-repeat center;
+    right: 6px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    text-indent: -100px;
+    top: 12px;
+    width: 14px;
+    background-size: 8px;
+}
+
+ol.breadcrumb.show {
+    display: block !important;
+    height: auto;
+    margin: 15px 0 -10px;
+    min-height: 0;
+    padding: 0 32px;
+    position: relative;
+    top: 0;
+}
+
+ol.breadcrumb > li + li:before {
+    content: ">";
+}
+
+.breadcrumb {
+    border-radius: 0;
+    z-index: 99;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb_b {
+    position: relative;
+    display: block;
+    height: 10px;
+    z-index: 9;
+}
+
+.breadcrumb li, .breadcrumb a {
+    color: #0A5193;
+    font-family: "Myriad Pro";
+    font-size: 14px;
+}
+
+.margin15 {
+    margin-bottom: 15px;
+}
+
+.readmore, body .page_box span.readmore {
+    float: right;
+    color: #9d9d9c;
+    background: url('../images/readmores.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/readmores.jpg*/ no-repeat right center;
+    text-transform: uppercase;
+    font-family: 'UTM Bebas' !important;
+    font-size: 10px;
+    min-width: 40px;
+    height: 18px;
+    line-height: 18px;
+    display: inline-block;
+    text-align: center;
+}
+
+.mores, body .blog_box span.mores {
+    float: right;
+    color: #9d9d9d;
+    background: url('../images/readmores.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/readmores.jpg*/ no-repeat right 57%;
+    padding-right: 8px;
+    text-transform: uppercase;
+    font-family: "UTM Swiss Condensed" !important;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.news_intro {
+    color: #575756;
+}
+
+.question_list .view_all {
+    background: url('../images/view_all.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/view_all.jpg*/ no-repeat center;
+    width: 54px;
+    height: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 0;
+    display: inline-block;
+    font-size: 10px;
+    font-family: 'UTM Bebas';
+    margin-right: 8px;
+    text-indent: 8px;
+    margin-left: 2px;
+}
+
+.news_o img {
+    float: left;
+    margin-right: 10px;
+}
+
+.box_faqs .items1 img {
+    margin-bottom: 10px;
+}
+
+.faq_item {
+    margin-bottom: 20px;
+}
+
+.title h1, .title h2, .title h3 {
+    margin: 0;
+}
+
+.line_news {
+    border-bottom: 1px solid #b5b5b5;
+    clear: both;
+    display: block;
+    margin-bottom: 0px;
+    padding-top: 10px;
+}
+
+.img_lbl {
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+}
+
+.img_lbl.new span {
+    background: url('../images/ico_new.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/ico_new.png*/ no-repeat left top;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    background-size: 100%;
+}
+
+.img_lbl.hot span {
+    background: url('../images/ico_hot.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/ico_hot.png*/ no-repeat left top;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    background-size: 100%;
+}
+
+#home_box h3 span {
+    min-height: 46px;
+    background-size: 370px !important;
+}
+
+#home_box.mod_right h3 span {
+    min-height: 36px;
+    background-size: 100% 100% !important;
+    padding-left: 45px !important;
+}
+
+#home_box h3 span a {
+    line-height: 44px;
+}
+
+#home_box.mod_right h3 span a {
+    line-height: 34px;
+}
+
+.nobr {
+    border: none !important;
+}
+
+.notop {
+    margin-top: 0 !important;
+}
+
+.clear {
+    display: block;
+    clear: both;
+}
+
+.noleft {
+    padding-left: 0 !important;
+}
+
+.noright {
+    padding-right: 0 !important;
+}
+
+.textleft {
+    text-align: left;
+}
+
+.textright {
+    text-align: right;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.textjust {
+    text-align: justify;
+}
+
+.box_w {
+    border-radius: 10px;
+    padding: 15px 30px;
+    background: #fff;
+    position: relative;
+    margin: 15px 0;
+}
+
+.box_w2 {
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    padding: 15px;
+    position: relative;
+}
+
+.search_q form {
+    height: 25px;
+    padding-top: 3px;
+}
+
+.item .lines_h {
+    display: block;
+    border-bottom: 1px solid #ccc;
+    width: 73%;
+    margin: 20px 0;
+}
+
+.item.last .lines_h {
+    border-bottom: none;
+}
+
+.item .lines_h2 {
+    display: block;
+    border-bottom: 1px solid #ccc;
+    width: 70%;
+    margin: 22px 0 0;
+}
+
+.item.last .lines_h2 {
+    border-bottom: none;
+}
+
+.share_box .item img {
+    height: 36px;
+}
+
+.eco-green img {
+    max-width: 156px;
+}
+
+.logo_header img {
+    //max-width: 380px;
+}
+
+#menu_desk .show_640, #menu_desk .w50 {
+    display: none !important;
+}
+
+.game_detail #share-buttons-bottom {
+    display: none !important;
+}
+
+.fixbox {
+    position: fixed;
+    width: 100%;
+    height: 161px;
+    top: 0;
+    z-index: 9999;
+}
+
+body {
+    margin-top: 118px;
+}
+
+.addthis_button_google_plusone, .addthis_button_tweet, .addthis_button_tweet, .addthis_button_facebook_share, .addthis_button_facebook_like {
+    display: inline-block;
+    height: 23px;
+}
+
+li.mod_back {
+    display: none !important;
+}
+
+a.box_lsnews {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.sub_menu a {
+    font-size: 18px;
+    color: #0A5193;
+    font-family: 'UTM Bebas';
+    padding: 3px 13px;
+    line-height: 1.3;
+}
+
+.sub_menu a {
+    background: url('../images/submenu.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/submenu.jpg*/;
+    background-repeat: repeat-x;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    display: inline-block;
+}
+
+.sub_menu a:hover, .sub_menu a.active {
+    background: url('../images/submenu_active.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/submenu_active.jpg*/;
+    background-size: 100% 38px;
+    background-repeat: repeat-x;
+    border-radius: 5px 5px 0 0;
+    color: #e9652d;
+}
+
+.sub_menu .line {
+    height: 27px;
+    width: 0px;
+    border-left: 3px solid #0A5193;
+    margin: 0 10px -5px;
+    display: inline-block;
+}
+
+.sub_menu {
+    margin-bottom: 20px;
+}
+
+.menu_box {
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+}
+
+div .nav.nav-tabs {
+    margin-bottom: 10px;
+    border: none;
+    background: url('../images/bg_tabs.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/bg_tabs.jpg*/;
+    background-position: left top;
+    background-repeat: repeat-x;
+    min-height: 26px;
+}
+
+div .nav.nav-tabs li {
+}
+
+div .nav.nav-tabs li.active, .nav.nav-tabs li:hover {
+    background: url('../images/bg_tabs_h.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/bg_tabs_h.jpg*/;
+    background-position: left top;
+    background-repeat: repeat-x;
+}
+
+div .nav-tabs li a, .nav-tabs li.active a {
+    color: #fff !important;
+    padding: 0 15px;
+    font-size: 15px;
+    font-family: 'Myriad Pro';
+    border: none !important;
+    min-height: 26px;
+}
+
+div .nav-tabs li a {
+    background: url('../images/line.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/line.jpg*/ no-repeat left center !important;
+}
+
+div .nav-tabs li.active a, div .nav-tabs li:first-child a {
+    background: none !important;
+}
+
+.tab-content {
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.dont {
+    position: absolute;
+    left: -9999px;
+}
+
+.box_other_news h3 {
+    margin: 5px 0;
+    min-height: 36px;
+}
+
+.box_other_news .boxs {
+    margin: 0 -10px;
+}
+
+.box_other_news h2 {
+    margin: 15px 0;
+}
+
+.line_hr {
+    border-top: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.hide_640 {
+    display: none;
+}
+
+.box_title {
+    color: #0A5193;
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    clear: both;
+    text-transform: uppercase;
+}
+
+#owl-hdnh .owl-controls {
+    display: inline-block;
+}
+
+.box1_bg {
+    background: #e6e6e6;
+    font-size: 37px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'UTM Bebas';
+    color: #02407d;
+    padding: 3px 0;
+    margin: 15px 0;
+}
+
+.box2_bg {
+    background: #e6e6e6;
+    font-size: 37px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'UTM Bebas';
+    color: #e96630;
+    padding: 3px 0;
+    margin: 15px 0;
+}
+
+.panel-group .panel + .panel {
+    margin-top: 8px;
+}
+
+#box_rate:hover {
+    cursor: pointer;
+}
+
+#box_rate span {
+    background: url('../images/rate.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/images/rate.png*/ no-repeat left center;
+    min-width: 24px;
+    height: 24px;
+    margin-left: 26px;
+    display: inline-block;
+}
+
+#box_rate span:hover {
+    background: url('../images/rate_h.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/images/rate_h.png*/ no-repeat left center;
+}
+
+@media (min-width: 1280px) {
+    #menu_desk li a {
+        padding: 0 22px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hotline_header, .form_search_desk {
+        margin-right: -10px;
+    }
+
+    .hotline_header img, .linkhot img {
+        max-width: 170px;
+    }
+}
+
+@media (min-width: 980px) and (max-width: 1024px) {
+    #home_box h3 span, #home_box h3 span a {
+        font-size: 21px;
+    }
+
+    .line_news {
+        padding-top: 0;
+    }
+
+    #home_box .content {
+        min-height: 230px;
+    }
+
+    #home_box .box_news {
+        min-height: 0;
+        padding-top: 6px;
+    }
+
+    .box_news .item {
+        margin-bottom: 0;
+    }
+
+    .slide_logo {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    #menu_desk li a {
+        padding: 0 14px;
+    }
+
+    .box_mod_news .title h3 {
+        font-size: 15px;
+    }
+
+    .blog_box div.intro {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+    #menu_desk li a {
+        padding: 0 15px;
+    }
+
+    .hotline_header img, .linkhot img {
+        max-width: 229px;
+    }
+
+    .form_search_desk form, .navbar-header form {
+        background: url('../images/searchs.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/searchs.jpg*/ no-repeat left top;
+        width: 200px;
+        position: relative;
+        background-size: 195px;
+        margin-top: 4px;
+        margin-left: 5px;
+    }
+
+    #footer .eco-green, #footer .slide_logo {
+        margin-top: 6px;
+    }
+
+    .slide_logo {
+        margin-left: 0 !important;
+    }
+
+    #owl-custome .owl-wrapper .owl-item img {
+    }
+
+    #list_games .game_name {
+        left: 0;
+    }
+
+    #menu_desk {
+        min-width: 555px;
+    }
+
+    .form_search_desk form {
+        width: 150px;
+        background-size: 100% 100%;
+        border-radius: 3px;
+    }
+
+    .form_search_desk form input[type="submit"] {
+        right: 0;
+    }
+
+    .box_w2 {
+        padding: 8px;
+    }
+
+    #home_box .content {
+        padding: 0 8px;
+    }
+
+    .box_mod_news .news1 {
+        border-right: none;
+    }
+
+    .item .lines_h {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 800px) {
+    #home_box .box_tuvan img, #home_box .box_chamsoc img, #home_box .box_thugian img {
+        margin: 0 0 5px;
+    }
+
+    #home_box .container .col-sm-3 {
+        padding-left: 6px;
+        padding-right: 6px;
+        width: 23%;
+    }
+
+    #home_box .container .col-sm-3:last-child {
+        width: 31%;
+    }
+
+    .share_box {
+        max-width: 165px;
+        padding: 0;
+    }
+
+    .share_box .item img {
+        height: 24px;
+    }
+
+    .eco-green img {
+        max-width: 110px;
+    }
+
+    .box_tuvan h3, .box_chamsoc h3, .box_thugian h3, .box_tintuc h3 {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    #home_box h3 span, #home_box h3 span a {
+        min-height: 36px;
+        line-height: 36px;
+    }
+
+    #home_box h3 span {
+        background-size: 300px !important;
+    }
+
+    #menu_desk li a {
+        padding: 0 6px;
+    }
+
+    .box_tintuc .content .box_news img {
+        width: 100%;
+        height: 45px;
+    }
+
+    #home_box .container h3 span,
+    #home_box .box_w2 h3 span, #home_box .box_w2 h3:hover span {
+        padding-left: 45px !important;
+    }
+
+    #home_box.mod_right h3 span {
+        background-size: 178px !important;
+    }
+
+    #home_box.mod_right h3 span, #home_box.mod_right h3 span a {
+        height: 23px;
+        line-height: 18px;
+        min-height: 23px;
+        font-size: 15px;
+        display: block;
+    }
+
+    .img_lbl.new span {
+        width: 28px;
+        height: 28px;
+    }
+
+    .img_lbl.hot span {
+        width: 28px;
+        height: 28px;
+    }
+
+    #home_box h3 span, #home_box h3 span a {
+        font-size: 17px;
+    }
+
+    #home_box .content {
+        min-height: 225px;
+    }
+
+    #home_box .box_tintuc .content {
+        height: 238px;
+        overflow: hidden;
+    }
+
+    .okshow {
+        min-width: 320px;
+    }
+
+    .box_news, .line_news {
+        padding-top: 5px;
+    }
+
+    #home_box .box_news .item {
+        min-height: 0;
+    }
+
+    #home_box .content .box_news a {
+        font-size: 12px;
+    }
+
+    #home_box .box_news {
+        min-height: 50px;
+    }
+
+    #home_box .box_tintuc .content {
+        height: 225px;
+    }
+
+    #home_box .box_news .item {
+        min-height: 29px;
+    }
+
+    #home_box .view_all {
+        margin-top: 0 !important;
+    }
+
+    .box_mod_news .news1 .mores {
+        margin-bottom: 10px;
+    }
+
+    .blog_others {
+        border-top: none;
+    }
+
+    .box_mod_news .news1 {
+        padding-right: inherit;
+    }
+
+    .news1 .thumb {
+        width: 100%;
+    }
+
+    .box_mod_news .col-xs-12.col-md-7 {
+        border-right: 0px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 15px;
+    }
+
+    .hotline_header img, .linkhot img {
+        max-width: 140px !important;
+    }
+
+    #owl-custome .owl-wrapper .owl-item img {
+        height: 40px;
+        width: auto;
+    }
+
+    .sub_menu a {
+        padding: 3px 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    #owl-hdnh .owl-controls {
+        position: absolute;
+        bottom: -40px;
+        left: 0;
+    }
+
+    .mod_right #owl-hdnh .owl-controls {
+        bottom: -30px;
+    }
+
+    .breadcrumb > li {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 767px) {
+    .head_title {
+        height: auto;
+        line-height: 1;
+    }
+
+    ol.breadcrumb.show {
+        margin: 5px 0;
+    }
+
+    .box_mod_news .col-xs-12.col-md-7 {
+        border-right: 0px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 15px;
+    }
+
+    .box_mod_news .news1 .mores {
+        margin-bottom: 10px;
+    }
+
+    .blog_others {
+        border-top: none;
+    }
+
+    .box_mod_news .news1 {
+        padding-right: inherit;
+    }
+
+    .news1 .thumb {
+        width: 100%;
+    }
+
+    .breadcrumb {
+        display: none !important;
+    }
+
+    .breadcrumb.question {
+        display: block !important;
+    }
+
+    ol.breadcrumb.show {
+        padding: 0 12px;
+    }
+
+    .breadcrumb a {
+        font-family: 'MyriadPro-Cond';
+        font-size: 25px;
+        color: #3c3c3c;
+        padding-left: 35px;
+    }
+
+    .breadcrumb.question li {
+        display: inline;
+    }
+
+    .breadcrumb.question a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        padding-left: 0;
+    }
+
+    li.mod_back {
+        display: inline-block !important;
+        background: url('../images/back.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/back.png*/ no-repeat left center;
+    }
+
+    .form_search_desk form, .navbar-header form {
+        background: url('../images/searchs.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/searchs.png*/ no-repeat left top;
+        width: 100%;
+        position: relative;
+        margin-top: 2px;
+        margin: 0 10px;
+    }
+
+    .navbar-header form input[type="submit"] {
+        background: none;
+    }
+
+    #menu_desk .show_640 {
+        display: block !important;
+    }
+
+    .menu_m #menuMobile {
+        float: right;
+        height: 28px;
+        margin-right: 8px;
+        margin-top: 0;
+        padding: 2px 5px;
+        width: 40px;
+        border: none;
+        background: none;
+        box-shadow: none;
+        position: absolute;
+        bottom: 8px;
+        right: 0;
+    }
+
+    .menu_m ul.dropdown-menu {
+        border: medium none;
+        border-radius: 0;
+        width: 96%;
+        margin: 5px 2%;
+        padding: 15px 2%;
+        border-radius: 5px 5px 5px 5px;
+        background: url('../images/menus.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/menus.png*/;
+    }
+
+    .menu_m ul.dropdown-menu .box_menu {
+        position: relative;
+        margin-top: 5px;
+    }
+
+    .menu_m ul.dropdown-menu li.w50 {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .menu_m ul.dropdown-menu li.w50 ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu_m ul.dropdown-menu li.w50 a span {
+        display: none;
+    }
+
+    .menu_m ul.dropdown-menu li.w50 li a span {
+        display: inline-block;
+    }
+
+    .navbar-header form input[type="text"] {
+        font-size: 24px;
+        line-height: 68px;
+        font-style: italic;
+    }
+
+    .menu_m ul.dropdown-menu li a {
+        font-size: 24px;
+        text-transform: capitalize;
+        color: #000;
+        line-height: 1.4;
+        font-family: 'MyriadPro-Cond';
+    }
+
+    .menu_m ul.dropdown-menu li a:hover {
+        color: #6FBB28;
+    }
+
+    .menu_m ul.dropdown-menu li.current {
+        color: #ff0000;
+    }
+
+    .menu_m ul.dropdown-menu li.mnu_home a {
+        background: url('../images/h_home.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/h_home.png*/ no-repeat left center;
+        padding-left: 20px;
+    }
+
+    .menu_m ul.dropdown-menu li.show_640 a {
+        background: url('../images/h_tintuc.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/h_tintuc.png*/ no-repeat left center;
+        padding-left: 25px;
+    }
+
+    .menu_m ul.dropdown-menu li.h_tuvan a {
+        background: url('../images/h_tuvan.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/h_tuvan.png*/ no-repeat left center;
+        padding-left: 25px;
+    }
+
+    .menu_m ul.dropdown-menu li.h_nhanhang a {
+        background: url('../images/h_hoatdong.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/h_hoatdong.png*/ no-repeat left top;
+        padding-left: 25px;
+        display: inline-block;
+    }
+
+    .menu_m ul.dropdown-menu li.h_thugian a {
+        background: url('../images/h_thugian.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/h_thugian.png*/ no-repeat left center;
+        padding-left: 25px;
+    }
+
+    .menu_m ul.dropdown-menu li.h_tintuc a {
+        background: url('../images/h_tintuc.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/h_tintuc.png*/ no-repeat left center;
+        padding-left: 25px;
+    }
+
+    .menu_m ul.dropdown-menu li.menu_jex a {
+        background: url('../images/bg_jex.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/bg_jex.png*/ no-repeat left 0;
+        padding-left: 80px;
+        min-height: 57px;
+        display: block;
+    }
+
+    .menu_m ul.dropdown-menu li.menu_jex a span {
+        display: none;
+    }
+
+    .dropdown-menu ul {
+        padding-left: 15px;
+        line-height: 1;
+        display: none;
+    }
+
+    .dropdown-menu .last ul {
+        display: block;
+    }
+
+    .dropdown-menu .mnu_kienthucbenhhoc ul li span {
+        font-size: 16px;
+    }
+
+    .menu_m ul.dropdown-menu li.otive li a {
+        background: url('../images/bull.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/img/bull.png*/ no-repeat left center;
+        padding-left: 15px;
+    }
+
+    .menu_m ul.dropdown-menu li.otive li a span {
+        display: inline-block;
+    }
+
+    .menu_m ul.dropdown-menu li.menu-tintuc {
+        display: none;
+    }
+
+    .menu_m ul.dropdown-menu li a span {
+        line-height: 1;
+    }
+
+    .menu_m ul.dropdown-menu li {
+        padding: 3px 0;
+    }
+
+    .navbar-header .col-xs-12 {
+        padding: 0 5px;
+    }
+
+    .menu_m ul.dropdown-menu li {
+        width: 48%;
+        overflow: hidden;
+    }
+
+    .menu_m ul.dropdown-menu li li {
+        width: 100%;
+        clear: both;
+    }
+
+    .menu_m ul.dropdown-menu li.show_640 {
+        float: right;
+    }
+
+    .menu_m ul.dropdown-menu li.otive ul {
+        padding: 0;
+        margin-left: 10px;
+    }
+
+    .menu_m span.icon-bar {
+        background: none repeat scroll 0 0 #fff;
+        border: medium none;
+        display: block;
+        height: 5px;
+        margin: 1px 0 4px;
+        width: 100%;
+    }
+
+    #home_box .box_tintuc .content {
+        min-height: 185px;
+    }
+
+    .fixbox {
+        height: 92px;
+    }
+
+    body {
+        margin-top: 92px;
+    }
+}
+
+@media (min-width: 642px) {
+    .blog_goctudo .title .head_title {
+        border: none;
+        padding-left: 0;
+        margin-top: 0 !important;
+    }
+}
+
+@media (min-width: 667px) and (max-width: 736px) {
+    .hide_640 {
+        display: block;
+    }
+
+    .box_mod_news .col-xs-12 {
+        padding-left: 0 !important;
+    }
+
+    .mnu_news {
+        display: none;
+    }
+
+    .logo_header img {
+        margin: 10px 0;
+        max-width: 430px;
+    }
+
+    .navbar-header form {
+        height: 68px;
+    }
+
+    .logo_header {
+        margin: 0;
+    }
+
+    div#slide {
+        display: none;
+    }
+
+    .blog_goctudo .title .head_title {
+        border: none;
+        padding-left: 0;
+    }
+
+    .okshow {
+        min-width: 95%;
+    }
+
+    #mainmenu {
+        display: none;
+    }
+
+    div#header {
+        min-height: 85px;
+    }
+
+    body {
+        margin-top: 85px;
+    }
+
+    .navbar-header {
+        display: block;
+        margin: 85px 5px 0;
+    }
+
+    .navbar-header .form_search {
+        display: none;
+    }
+
+    #home_box .box_tuvan, #home_box .box_chamsoc, #home_box .box_thugian, #home_box .box_tintuc {
+        margin-bottom: 15px;
+    }
+
+    .item .lines_h {
+        width: 100%;
+    }
+
+    #home_box .content {
+        min-height: 280px;
+    }
+
+    .hotline_header img, .linkhot img {
+        max-width: 170px;
+    }
+
+    .fixbox .navbar-header .form_search {
+        display: none;
+    }
+
+    .eco-green img {
+        max-width: 126px;
+    }
+
+    .col-sm-9, #content .col-sm-9 .col-sm-9 {
+        width: 75%;
+    }
+
+    .col-sm-8 {
+        width: 66.66666667%;
+    }
+
+    .col-sm-7 {
+        width: 58.33333333%;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+
+    .col-sm-5 {
+        width: 41.66666667%;
+    }
+
+    .col-sm-4 {
+        width: 33.33333333%;
+    }
+
+    .col-sm-3 {
+        width: 25%;
+    }
+
+    #content .col-sm-9 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 660px) and (max-width: 670px) {
+    .eco-green img {
+        max-width: 110px;
+    }
+
+    .hotline_header img, .linkhot img {
+        max-width: 155px;
+    }
+
+    .share_box {
+        transform: scale(0.8);
+    }
+
+    #footer .slide_logo i {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 479px) {
+    #home_box h3 span {
+        background-size: 400px auto !important
+    }
+}
+
+@media (max-width: 650px) {
+    li.iconew {
+        padding-top: 10px !important;
+    }
+
+    .hide_640 {
+        display: block;
+    }
+
+    .box_mod_news .col-xs-12 {
+        padding-left: 0 !important;
+    }
+
+    .mnu_news {
+        display: none;
+    }
+
+    .logo_header img {
+        margin: 10px 0;
+        max-width: 430px;
+    }
+
+    .navbar-header form {
+        height: 68px;
+    }
+
+    .logo_header {
+        margin: 0;
+    }
+
+    div#slide {
+        display: none;
+    }
+
+    .blog_goctudo .title .head_title {
+        border: none;
+        padding-left: 0;
+    }
+
+    .okshow {
+        min-width: 95%;
+    }
+
+    #mainmenu {
+        display: none;
+    }
+
+    div#header {
+        min-height: 85px;
+    }
+
+    body {
+        margin-top: 85px;
+    }
+
+    .navbar-header {
+        display: block;
+        margin: 85px 5px 0;
+    }
+
+    .navbar-header .form_search {
+        display: none;
+    }
+
+    .noleftxs {
+        padding-left: 0 !important;
+    }
+
+    .norightxs {
+        padding-right: 0 !important;
+    }
+
+    #home_box .box_tuvan, #home_box .box_chamsoc, #home_box .box_thugian, #home_box .box_tintuc {
+        margin-bottom: 15px;
+    }
+
+    .item .lines_h {
+        width: 100%;
+    }
+
+    #home_box .content {
+        min-height: 230px;
+    }
+}
+
+@media (min-width: 482px) and (max-width: 640px) {
+    #home_box .box_tintuc .content {
+        min-height: 195px;
+    }
+
+    .box_news a.img img {
+        width: 63px;
+    }
+
+    .share_box {
+        left: -10px;
+        margin: 10px 0;
+        position: absolute;
+        top: -0px;
+    }
+
+    .linkhot {
+        margin-right: 15px;
+    }
+
+    .eco-green, .copyright {
+        padding-left: 10px !important;
+    }
+
+    #list_games .game_name {
+        left: 35%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 640px) {
+    .divtintuc {
+        display: none !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .sub_menu a {
+        padding: 3px 5px;
+        font-size: 10px !important;
+    }
+
+    .col-xs-12 {
+        padding: 0;
+    }
+
+    .item .lines_h2 {
+        width: 100%;
+    }
+
+    body .page_box span.readmore {
+        margin-top: 10px;
+    }
+
+    .blog_others {
+        padding: 0;
+        margin: 0;
+    }
+
+    body .box_mod_news .page_box span.mores {
+        display: none !important;
+    }
+
+    .logo_header img {
+        margin: 6px 0;
+        max-width: 365px;
+    }
+
+    .navbar-header {
+        display: block;
+        margin: 70px 5px 0;
+    }
+
+    body {
+        margin-top: 70px;
+    }
+
+    div#header {
+        min-height: 70px;
+    }
+
+    .form_search_desk form, .navbar-header form {
+        background-size: 95%;
+        height: 56px;
+    }
+
+    .navbar-header form input[type="text"] {
+        line-height: 48px;
+    }
+
+    .menu_m ul.dropdown-menu {
+        margin: 10px 2%;
+    }
+
+    #footer .container .row div.pull-right {
+        float: left !important;
+    }
+
+    #footer .container .row div.textright {
+        text-align: left !important;
+    }
+
+    .eco-green, .copyright {
+        padding-left: 10px !important;
+    }
+
+    .linkhot {
+        margin-top: 10px;
+    }
+
+    .share_box {
+        padding-left: 0 !important;
+        padding-top: 10px;
+    }
+
+    .form_contact .col-xs-6 {
+        width: 100%;
+        padding: 0 !important
+    }
+
+    .textright, .textleft {
+        text-align: center;
+    }
+
+    div#footer .share_box {
+        float: none !important;
+        display: block;
+        clear: both;
+    }
+
+    div#footer, div#footer .container .row div.linkhot, div#footer .container .row div.share_box {
+        text-align: center !important;
+        float: none !important;
+    }
+
+    div#footer .container .row div.share_box .box {
+        display: inline-block;
+    }
+
+    div#footer {
+        padding: 0 8px;
+    }
+
+    #footer .col-xs-12 {
+        padding: 0 0 10px !important;
+    }
+
+    .col12 {
+        width: 98% !important;
+        margin: 0 1% !important;
+    }
+
+    #home_box h3 span, #home_box h3 span a {
+        font-size: 15px;
+    }
+
+    #home_box .content {
+        min-height: 222px;
+    }
+
+    #home_box .box_tintuc .content {
+        min-height: 210px;
+    }
+
+    .eco-green {
+        margin: 10px 0 !important;
+    }
+
+    #home_box .box_tintuc .content {
+        height: 213px;
+    }
+
+    #list_games .game_name {
+        left: 30%;
+    }
+
+    .question_bar .line {
+        margin-left: 3px;
+        margin-right: 5px;
+    }
+
+    .question_bar .search_q_content {
+        position: relative;
+        height: auto;
+        margin-top: 1px;
+    }
+}
+
+@media (max-width: 415px) {
+    .show64 {
+        display: none;
+    }
+
+    .search_q form {
+        padding-top: 1px;
+    }
+
+    .menu_m ul.dropdown-menu li a {
+        font-size: 18px;
+    }
+
+    .col-xs-12 {
+        padding: 5px;
+    }
+
+    .question_bar a {
+        font-size: 14px;
+    }
+
+    body {
+        margin-top: 62px;
+    }
+
+    .navbar-header form input[type="text"] {
+        line-height: 36px;
+        font-size: 18px;
+    }
+
+    .menu_m ul.dropdown-menu {
+        margin: 25px 2%;
+    }
+
+    .form_search_desk form, .navbar-header form {
+        height: 48px;
+    }
+
+    .logo_header img {
+        margin: 6px 0;
+        max-width: 275px;
+    }
+
+    .navbar-header {
+        margin: 56px 5px 0;
+    }
+
+    div#header {
+        min-height: 54px;
+    }
+
+    body {
+        margin-top: 54px;
+    }
+
+    .xs12 {
+        width: 100% !important;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .box_news a.img img {
+        width: 65px;
+    }
+
+    .blog_box .thumb, .page_box .thumb {
+        margin-bottom: 10px;
+    }
+
+    .box_w {
+        padding: 10px 15px;
+    }
+
+    #list_games .game_name {
+        left: 24%;
+    }
+
+    #home_box .box_tintuc .content {
+        height: auto;
+    }
+
+    .sub_menu a {
+        font-size: 20px;
+    }
+
+    .download-camnang .sub_menu a {
+        font-size: 17px;
+    }
+
+    .download-camnang h1 {
+        font-size: 22px !important;
+    }
+
+    .blog_others {
+        margin: 20px 0 0;
+    }
+
+    .question_bar {
+        padding: 0 5px;
+    }
+}
+
+@media (max-width: 320px) {
+    .question_bar a {
+        font-size: 12px;
+    }
+
+    .box_mod_news .title h3 {
+        font-size: 16px;
+    }
+
+    body {
+        margin-top: 48px;
+    }
+
+    .logo_header img {
+        margin: 6px 0;
+        max-width: 235px;
+    }
+
+    .navbar-header {
+        margin: 50px 5px 0;
+    }
+
+    div#header {
+        min-height: 48px;
+    }
+
+    .navbar-header form input[type="text"] {
+        line-height: 32px;
+        font-size: 18px;
+    }
+
+    .form_search_desk form, .navbar-header form {
+        height: 36px;
+    }
+
+    .menu_m ul.dropdown-menu {
+        margin: 5px 2%;
+    }
+
+    .hst-6 {
+        width: 49%;
+    }
+}
+
+@media (min-width: 1024px) {
+    div#header.xuan {
+        background: #023f88 url('../images/bg_xuan.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/xuan/bg_xuan.jpg*/ no-repeat center top;
+        background-size: auto 100%;
+    }
+}
+
+@media (min-width: 980px) and (max-width: 1023px) {
+    div#header.xuan {
+        background: #023f88 url('../images/bg_xuan.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/xuan/bg_xuan.jpg*/ no-repeat 20px top;
+        background-size: auto 100%;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 980px) {
+    .hotline_header img {
+        width: 240px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+    div#header {
+        min-height: 67px;
+    }
+
+    .logo_header img {
+        max-width: 280px;
+    }
+
+    .hotline_header img {
+        max-width: 190px;
+    }
+
+    #header.xuan {
+        background: #015da4 url('../images/bg_xuan768.jpg') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/xuan/bg_xuan768.jpg*/ no-repeat center top;
+    }
+}
+
+@media (max-width: 767px) {
+    #header.xuan .container {
+        background: url('../images/ph.png') /*tpa=http://jexmax.com.vn/system/cms/themes/default/css/xcss/xuan/ph.png*/ no-repeat right center;
+        background-size: auto 160%;
+    }
+
+    .div_bottom_xuan {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .box-note {
+        text-align: center !important;
+        margin: 0 -2px;
+    }
+}
+
+#menu_desk li:hover ul{
+    display: block !important;
+}
+.breadcrumb li.active a {
+    color: #777;
+}
+#main_slide {
+    margin-top: 44px;
+}
+#box_lang >.current >span.flag_vi {
+    padding: 2px 0px;
+    background: url(../images/flag_vi.gif) no-repeat top right;
+    padding-right: 27px;
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+#box_lang ul.show {
+    display: block;
+}
+#box_lang ul {
+    display: none;
+    
+    z-index: 10;
+    /*background: #1295ff;*/
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+#box_lang ul {
+    list-style: none;
+    margin: 0px;
+}
+#box_lang ul li{
+    float: none;
+}
+
+#box_lang ul li >a.flag_vi {
+    padding: 2px 0px;
+    background: url(../images/flag_vi.gif) no-repeat top right;
+    padding-right: 27px;
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    display: block;
+}
+#box_lang ul li >a.flag_en {
+    padding: 2px 0px;
+    background: url(../images/flag_en.gif) no-repeat top right;
+    padding-right: 27px;
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    display: block;
+}
+#box_lang ul li >a.current {
+    display: none;
+}
+#menu_desk{
+    position: relative;
+}
+#box_lang{
+    position: absolute;
+    right: -40px;
+    top: 10px;
+    z-index: 100;
+    
+}
+#box_lang li:hover{
+    background:none;
+}
+
+.pagination a, .pagination span {
+
+    padding: 8px 15px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #428bca;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.pagination .pagecur{
+     z-index: 2;
+     color: #fff;
+     cursor: default;
+     background: #0A5193;    padding: 8px 15px;
+     border-color: #428bca;
+ }
